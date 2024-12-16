@@ -14,7 +14,7 @@ import java.io.IOException;
 public class apiKeyAuthFilter implements ContainerRequestFilter {
 
     private static final String SUBSCRIPTION_KEY_HEADER = "Subscription-key";
-    private static final String VALID_API_KEY = "123e4567-e89b-12d3-a456-426614174000"; // Reemplaza con tu ApiKey válida
+    private static final String VALID_API_KEY = "17400123e4567-e89b-12d3-a456-4266140"; // Reemplaza con tu ApiKey válida
 
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {

@@ -2,6 +2,7 @@ package com.idat.restserver.config;
 
 import com.idat.restserver.controller.PersonController;
 import com.idat.restserver.controller.ProductController;
+import com.idat.restserver.controller.CountryController; // Importa el controlador de Country
 
 import com.idat.restserver.security.BasicAuthFilter;
 import com.idat.restserver.security.apiKeyAuthFilter;
@@ -14,5 +15,6 @@ public class ServerConfig extends ResourceConfig {
         register(apiKeyAuthFilter.class);
         register(PersonController.class);
         register(ProductController.class);
+        register(CountryController.class); // Registra el controlador de Country
     }
 }
